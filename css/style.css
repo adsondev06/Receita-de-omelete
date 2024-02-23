@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Aqui temos as configurações da imagem*/
+img {
+  width: 100%;
+  min-width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  margin: 0 auto;
+  /* margin-left: 15px; */
+  /* margin-top: 50px; */
+}
+
+/* Aqui temos o corpo da nossa receita*/
+.geral {
+  background-color: #fff;
+  width: 600px;
+  /* height: 100%; */
+  /* margin: 12% 0 10% 0; */
+  padding: 35px 35px 35px 35px;
+  border-radius: 30px;
+  filter: drop-shadow(3px 8px 25px #000000);
+}
+
+/*Encerra*/
+
+/* Aqui temos nosso Background-color do tempo de preparação e toda estilização dentro*/
+.time {
+    background-color: #ce53ed36;
+    padding: 5px 15px 15px 15px;
+    border-radius: 10px;
+}
+
+.time > li {
+    line-height: 1.6rem;
+    margin: 0 0 0 25px;
+    padding: 0 0 0 20px;
+    list-style: square;
+}
+
+.time > p {
+    color: #860c3d;
+    font-size: 20px;
+    font-weight:800;
+    margin-bottom: 8px;
+}
+/* Encerra */
+
+
+/* Toda estilização do H2 */
+h2 {
+    color: #895051;
+}
+
+/* Aqui temos a etilização da nossa lista exeto uma que está na linha: 43 */
+ul > li {
+    line-height: 1.6rem;
+    list-style: square;
+}
+
+ol > li {
+    margin-bottom: 10px;
+}
+
+/* Aqui temos estilização das bordas finais */
+.ingredientes, .preparo {
+    border-bottom: 2px solid #c8cad0;
+}
+
+.nutri > li {
+    border-bottom: 2px solid #c8cad0;
+    line-height: 2.5rem;
+}
+
+span {
+    position: absolute;
+    margin-left: 250px;
+}
+
+.grama {
+    position: relative;
+    margin-left: 225px;
+} 
+
+.gorduras {
+    position: absolute;
+    margin-left: 245px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+footer  a {
+    text-decoration: none;
+    padding-top: 10px;
+    color: #1abc60;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 440px){
+    .geral {
+        width: 340px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .preparo  li{
+        left: 100px;
+    }
+
+    span {
+        margin-left: 100px;
+    }
+    
+    .grama {
+        margin-left: 75px;
+    } 
+    
+    .gorduras {
+        margin-left: 98px;
+    }
+    
+}
+
+/* @media (width: 275px) {
+    .geral {
+        width: 300px;
+        padding: 50px 30px 30px 30px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .preparo  li{
+        left: 100px;
+    }
+
+    span {
+        margin-left: 100px;
+    }
+    
+    .grama {
+        margin-left: 75px;
+    } 
+    
+    .gorduras {
+        margin-left: 98px;
+    }
+    
+} */
+
